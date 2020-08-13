@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Trial {
+public class AutomatedScript {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -23,13 +23,13 @@ public class Trial {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		  WebElement element = driver.findElement(By.name("q"));
-		    element.sendKeys(new String[]{"GMAIL"}); // send also a "\n"
+		    element.sendKeys(new String[]{"software automated testing"}); // send also a "\n"
 		    element.submit();
 		    Thread.sleep(2000);
 		    WebElement we1 = driver.findElement(By.name("q"));
-		    we1.findElement(By.xpath("//h3[text()='Gmail - Google']")).click();
-         
-//		    driver.close();
+		    we1.findElement(By.xpath("//h3[text()='Test automation - Wikipedia']")).click();
+		    Thread.sleep(5000);
+		    driver.close();
 	}
 
 }
